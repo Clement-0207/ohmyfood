@@ -1,0 +1,122 @@
+.menus {
+    padding: 20px;
+    margin: auto;
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.menu {
+    width: 300px;
+    height: 430px;
+    margin: 20px;
+    @include menu-shadow;
+
+    &.note {
+        background-color: $color-note;
+    }
+
+    &.chic {
+        background-color: $color-chic;
+    }
+
+    &.delice {
+        background-color: $color-delice;
+    }
+
+    &.palette {
+        background-color: $color-palette;
+    }
+}
+
+.menu .contenu {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 100px 0 100px 0;
+}
+
+
+.menu .titre {
+    text-align: center;
+    font-size: 2em;
+}
+
+.menu.note h3 {
+    font-family: 'devon', Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    letter-spacing: 0.02em;
+    font-size: 1.3em;
+    color: $color-menu-note;
+}
+.menu.note h2 {
+    font-family: 'baneberry', Arial, Helvetica, sans-serif;
+    color: $color-menu-note;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.note-musique img {
+    margin: 0 auto 0 auto;
+    color: transparent;
+}
+figure {
+    margin-bottom: 0;
+}
+
+.menu.chic h3 {
+    font-family: 'croissant', Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    @include gradient-text (rgb(247, 142, 31), rgb(142,86,252));
+    padding-top: 30px;
+    margin-bottom: 8px;
+}
+.menu.chic h2 {
+        font-family: 'spectral', Arial, Helvetica, sans-serif;
+        margin-top: 0;
+        color: $color-menu-chic;
+    }
+
+.menu.delice h3 {
+    font-family: 'dancing', Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    background: linear-gradient(to bottom right, rgb(9, 28, 222), rgb(137, 200, 255));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.menu.delice h2 {
+        font-family: 'segoe', Arial, Helvetica, sans-serif;
+        margin-top: 0;
+        color: $color-menu-delice;
+    }
+
+.menu.palette h3 {
+    font-family: 'kaushan', Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    background: linear-gradient(to bottom right, #179e0f, rgb(231, 247, 215));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+}
+.menu.palette h2 {
+        font-family: 'segoe', Arial, Helvetica, sans-serif;
+        margin-top: 0;
+        color: $color-menu-palette;
+    }
+    .menu.mentions {
+        width: 700px;
+        height: 2200px;
+        padding:10px 35px 0 35px;
+        & .contenu {
+        padding: 0;
+        font-style: italic;
+        text-align: justify;
+    }
+    }
+    .menus h3 {
+        font-size: 2em;
+    }
+   

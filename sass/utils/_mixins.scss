@@ -1,0 +1,14 @@
+@mixin menu-shadow {
+    box-shadow: 0px 0px 10px 0px $color-shadow;
+}
+@mixin structure-menu {
+    width: 700px;
+    height: 1000px;
+
+}
+@mixin gradient-text ($start-color, $end-color){
+    background: linear-gradient(to bottom right, $start-color, $end-color);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+}

@@ -1,0 +1,306 @@
+@media (max-width: 1200px) {
+  section.menus {
+    width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 976px) {
+  section.menus {
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #corps {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+  }
+
+  section.menus {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn.btn-prochainement {
+    width: 300px;
+    font-size: 1.6em;
+    margin: 20px auto 40px auto;
+  }
+
+  footer {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  footer .btn {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fdcb47;
+}
+
+h2, h3 {
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "devon";
+  src: url("../fonts/Devonshire-Regular.ttf");
+}
+@font-face {
+  font-family: "RalewayR";
+  src: url("../fonts/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "RalewayM";
+  src: url("../fonts/Raleway-Medium.ttf");
+}
+@font-face {
+  font-family: "croissant";
+  src: url("../fonts/CroissantOne-Regular.ttf");
+}
+@font-face {
+  font-family: "dancing";
+  src: url("../fonts/DancingScript-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "kaushan";
+  src: url("../fonts/KaushanScript-Regular.ttf");
+}
+@font-face {
+  font-family: "baneberry";
+  src: url("../fonts/Baneberry-Regular.ttf");
+}
+@font-face {
+  font-family: "spectral";
+  src: url("../fonts/Spectral-SemiBold.ttf");
+}
+@font-face {
+  font-family: "segoe";
+  src: url("../fonts/SegoePrint.ttf");
+}
+@font-face {
+  font-family: "rubik";
+  src: url("../fonts/Rubik-Medium.ttf");
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #569c87;
+  position: sticky;
+  bottom: 0;
+}
+footer .btn {
+  height: 65px;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.btn-mentions {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.btn-contacts {
+  text-align: right;
+  padding-right: 30px;
+}
+
+header {
+  background-color: #569c87;
+  color: #fdcb47;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  margin: auto;
+  padding: 25px 0 25px 0;
+}
+header h1 {
+  margin: 0px;
+  font-family: "cynthobold", Arial, Helvetica, sans-serif;
+  letter-spacing: -0.05em;
+}
+
+.menus {
+  padding: 20px;
+  margin: auto;
+  width: 700px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.menu {
+  width: 300px;
+  height: 430px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px 0px #bdbdbd;
+}
+.menu.note {
+  background-color: #fcdfdb;
+}
+.menu.chic {
+  background-color: #fcf5fe;
+}
+.menu.delice {
+  background-color: #f9f9f9;
+}
+.menu.palette {
+  background-color: #fdfffd;
+}
+
+.menu .contenu {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 100px 0 100px 0;
+}
+
+.menu .titre {
+  text-align: center;
+  font-size: 2em;
+}
+
+.menu.note h3 {
+  font-family: "devon", Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  letter-spacing: 0.02em;
+  font-size: 1.3em;
+  color: #3c1218;
+}
+
+.menu.note h2 {
+  font-family: "baneberry", Arial, Helvetica, sans-serif;
+  color: #3c1218;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.note-musique img {
+  margin: 0 auto 0 auto;
+  color: transparent;
+}
+
+figure {
+  margin-bottom: 0;
+}
+
+.menu.chic h3 {
+  font-family: "croissant", Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  background: linear-gradient(to bottom right, #f78e1f, #8e56fc);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-top: 30px;
+  margin-bottom: 8px;
+}
+
+.menu.chic h2 {
+  font-family: "spectral", Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  color: #c77413;
+}
+
+.menu.delice h3 {
+  font-family: "dancing", Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  background: linear-gradient(to bottom right, #091cde, #89c8ff);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu.delice h2 {
+  font-family: "segoe", Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  color: #0a87fb;
+}
+
+.menu.palette h3 {
+  font-family: "kaushan", Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  background: linear-gradient(to bottom right, #179e0f, #e7f7d7);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 15px;
+}
+
+.menu.palette h2 {
+  font-family: "segoe", Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  color: #72bf56;
+}
+
+.menu.mentions {
+  width: 700px;
+  height: 2200px;
+  padding: 10px 35px 0 35px;
+}
+.menu.mentions .contenu {
+  padding: 0;
+  font-style: italic;
+  text-align: justify;
+}
+
+.menus h3 {
+  font-size: 2em;
+}
+
+aside {
+  display: flex;
+}
+
+.btn.btn-prochainement {
+  font-family: "RalewayM", Arial, Helvetica, sans-serif;
+  background-color: #569c87;
+  color: #fdcb47;
+  letter-spacing: 0.06em;
+  width: 430px;
+  height: 70px;
+  border-radius: 8px;
+  margin: 0 auto 40px auto;
+  font-size: 2.2em;
+  border: 0px solid;
+}
+
+.btn {
+  font-family: "RalewayM", Arial, Helvetica, sans-serif;
+  background-color: #569c87;
+  color: #fdcb47;
+  letter-spacing: -0.02em;
+  width: 450px;
+  height: 60px;
+  margin: 0 auto 40px auto;
+  font-size: 2em;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
