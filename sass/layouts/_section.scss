@@ -50,6 +50,7 @@
     font-size: 1.3em;
     color: $color-menu-note;
 }
+
 .menu.note h2 {
     font-family: 'baneberry', Arial, Helvetica, sans-serif;
     color: $color-menu-note;
@@ -58,9 +59,10 @@
 }
 
 .note-musique img {
-    margin: 0 auto 0 auto;
+    margin: 0;
     color: transparent;
 }
+
 figure {
     margin-bottom: 0;
 }
@@ -68,55 +70,263 @@ figure {
 .menu.chic h3 {
     font-family: 'croissant', Arial, Helvetica, sans-serif;
     font-size: 1.1em;
-    @include gradient-text (rgb(247, 142, 31), rgb(142,86,252));
+    @include gradient-text ($start-color-gradient-chic, $end-color-gradient-chic);
     padding-top: 30px;
     margin-bottom: 8px;
 }
+
 .menu.chic h2 {
-        font-family: 'spectral', Arial, Helvetica, sans-serif;
-        margin-top: 0;
-        color: $color-menu-chic;
-    }
+    font-family: 'spectral', Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    color: $color-menu-chic;
+}
 
 .menu.delice h3 {
     font-family: 'dancing', Arial, Helvetica, sans-serif;
     font-size: 1.4em;
-    background: linear-gradient(to bottom right, rgb(9, 28, 222), rgb(137, 200, 255));
-    background-clip: border-box;
-    -webkit-background-clip: text;
+    @include gradient-text ($start-color-gradient-delice, $end-color-gradient-delice);
     color: transparent;
 }
+
 .menu.delice h2 {
-        font-family: 'segoe', Arial, Helvetica, sans-serif;
-        margin-top: 0;
-        color: $color-menu-delice;
-    }
+    font-family: 'segoe', Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    color: $color-menu-delice;
+}
 
 .menu.palette h3 {
     font-family: 'kaushan', Arial, Helvetica, sans-serif;
     font-size: 1.4em;
-    background: linear-gradient(to bottom right, #179e0f, rgb(231, 247, 215));
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    color: transparent;
+    @include gradient-text ($start-color-gradient-palette, $end-color-gradient-palette);
     margin-bottom: 15px;
 }
+
 .menu.palette h2 {
-        font-family: 'segoe', Arial, Helvetica, sans-serif;
-        margin-top: 0;
-        color: $color-menu-palette;
-    }
-    .menu.mentions {
-        width: 700px;
-        height: 2200px;
-        padding:10px 35px 0 35px;
-        & .contenu {
+    font-family: 'segoe', Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    color: $color-menu-palette;
+}
+
+.menu.mentions {
+    width: 700px;
+    height: 2200px;
+    padding: 10px 35px 0 35px;
+
+    & .contenu {
         padding: 0;
         font-style: italic;
         text-align: justify;
     }
+}
+
+.menus h3 {
+    font-family: 'rubik', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+/*menu note de musique*/
+.menus-note {
+    @include structure-menu;
+
+    & h1 {
+        text-align: center;
+        font-family: 'rubik', Arial, Helvetica, sans-serif;
+        font-size: 2.3em;
+        font-weight: lighter;
+        margin-bottom: 15px;
     }
-    .menus h3 {
+
+    & .contenu {
+        width: 100%;
+        padding: 0;
+
+        & h3 {
+            font-size: 2.5em;
+        }
+    }
+
+    & .menu.note {
+        width: 780px;
+        height: auto;
+        margin: auto;
+        padding: 0 70px;
+        font-family: 'segoe', Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+
+        & img {
+            padding: 0;
+            margin: auto 0;
+        }
+
+        & .sous-titre-menu {
+            font-size: 1.4em;
+            margin: auto;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        & p {
+            margin: 0;
+            width: 90%;
+
+
+            &.prix {
+                width: 10%;
+                text-align: right;
+                font-weight: 900;
+                font-size: large;
+            }
+        }
+
+        & .ligne {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+    }
+
+    & .note-musique {
+        margin: 0;
+        padding-top: 50px;
+
+        & img {
+            margin: 0;
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+
+.fin {
+    width: 500px;
+    margin: 0 auto 0 auto;
+    padding: 50px 0 0 130px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+
+    & img {
+        width: 60px;
+        height: 60px;
+    }
+
+    & h3.text {
         font-size: 2em;
+        padding: 20px 0;
+        margin: auto auto auto 10px;
     }
-   
+}
+
+
+
+
+
+/*menu chic à la française*/
+.menus-chic {
+    @include structure-menu;
+
+    & h1 {
+        text-align: center;
+        font-family: 'rubik', Arial, Helvetica, sans-serif;
+        font-size: 2.3em;
+        font-weight: lighter;
+        margin-bottom: 15px;
+    }
+
+    & .contenu {
+        width: 100%;
+        padding: 0;
+
+        & h3 {
+            padding: 100px 0 50px 0;
+            font-size: 2em;
+        }
+    }
+
+    & .menu.chic {
+        width: 800px;
+        height: auto;
+        margin: auto;
+        padding: 0 30px;
+        font-family: 'roboto', Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+
+        & img {
+            padding: 0;
+            margin: auto 0;
+        }
+
+        & .sous-titre-menu {
+            letter-spacing: 0.07em;
+            font-size: 1.4em;
+            margin: auto;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        & .entree {
+            color: $color-menu-chic;
+
+            & p {
+                padding-left: 80px;
+                margin: 0;
+                width: 90%;
+                letter-spacing: 0.05em;
+
+                &.prix {
+                    padding-right: 90px;
+                    width: 10%;
+                    text-align: right;
+                }
+            }
+        }
+
+        & .plat {
+            color: $color-chic-plat;
+            font-size: 0.9em;
+
+            & p {
+                padding-left: 80px;
+                margin: 0;
+                width: 90%;
+                letter-spacing: 0.05em;
+
+                &.prix {
+                    padding-right: 90px;
+                    width: 10%;
+                    text-align: right;
+                }
+            }
+        }
+
+        & .dessert {
+            color: $color-chic-dessert;
+            font-size: 0.9em;
+
+            & p {
+                padding-left: 80px;
+                margin: 0;
+                width: 90%;
+                letter-spacing: 0.05em;
+
+                &.prix {
+                    padding-right: 90px;
+                    width: 10%;
+                    text-align: right;
+                }
+            }
+        }
+
+        & .ligne {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        & .derniere-ligne {
+            padding-bottom: 100px;
+        }
+    }
+}

@@ -2,13 +2,21 @@ body {
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
 }
+
 a:visited {
-    color:$color-secondary;
+    color: $color-secondary;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-weight: lighter;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
