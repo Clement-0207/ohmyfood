@@ -242,7 +242,7 @@ figure {
 .menu.delice h3 {
   font-family: "dancing", Arial, Helvetica, sans-serif;
   font-size: 1.4em;
-  background: linear-gradient(to bottom right, #091cde, #89c8ff);
+  background: linear-gradient(to bottom right, #2335f3, #89c8ff);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -258,7 +258,7 @@ figure {
 .menu.palette h3 {
   font-family: "kaushan", Arial, Helvetica, sans-serif;
   font-size: 1.4em;
-  background: linear-gradient(to bottom right, #179e0f, #e7f7d7);
+  background: linear-gradient(to bottom right, #0b9104, #e7f7d7);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -458,6 +458,140 @@ figure {
   justify-content: space-between;
 }
 .menus-chic .menu.chic .derniere-ligne {
+  padding-bottom: 100px;
+}
+
+/*menu le délice des papilles*/
+.menus-delice {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.menus-delice h1 {
+  text-align: center;
+  font-family: "rubik", Arial, Helvetica, sans-serif;
+  font-size: 2.3em;
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+.menus-delice .contenu {
+  width: 100%;
+  padding: 0;
+}
+.menus-delice .contenu h3 {
+  padding: 100px 0 0 0;
+  font-size: 3.5em;
+}
+.menus-delice .menu.delice {
+  width: 885px;
+  height: auto;
+  margin: auto;
+  padding: 0 25px;
+  font-family: "segoe", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: black;
+}
+.menus-delice .menu.delice img {
+  padding: 0;
+  margin: auto 0;
+}
+.menus-delice .menu.delice .sous-titre-menu {
+  letter-spacing: 0.07em;
+  font-size: 1.4em;
+  margin: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.menus-delice .menu.delice p {
+  padding-left: 70px;
+  margin: 0;
+  width: 90%;
+  letter-spacing: 0.05em;
+  line-height: 0.8em;
+}
+.menus-delice .menu.delice p.prix {
+  padding-right: 80px;
+  width: 10%;
+  text-align: right;
+  font-size: 1.5em;
+}
+.menus-delice .menu.delice .ligne {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.menus-delice .menu.delice .derniere-ligne {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+/*menu la palette du goût*/
+.menus-palette {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.menus-palette h1 {
+  text-align: center;
+  font-family: "rubik", Arial, Helvetica, sans-serif;
+  font-size: 2.3em;
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+.menus-palette .contenu {
+  width: 100%;
+  padding: 0;
+}
+.menus-palette .contenu h3 {
+  padding: 100px 0 0 0;
+  font-size: 3.5em;
+}
+.menus-palette .menu.palette {
+  width: 900px;
+  height: auto;
+  margin: auto;
+  padding: 0 25px;
+  font-family: "segoe", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: black;
+}
+.menus-palette .menu.palette img {
+  padding: 0;
+  margin: auto 0;
+}
+.menus-palette .menu.palette .sous-titre-menu {
+  letter-spacing: 0.07em;
+  font-size: 1.4em;
+  margin: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.menus-palette .menu.palette p {
+  padding-left: 60px;
+  margin: 0;
+  width: 90%;
+  height: 20px;
+  letter-spacing: 0.05em;
+  line-height: 0.7em;
+  font-size: 1.01em;
+}
+.menus-palette .menu.palette p.prix {
+  padding-right: 80px;
+  width: 10%;
+  text-align: right;
+  font-size: 1.5em;
+}
+.menus-palette .menu.palette .ligne {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.menus-palette .menu.palette .derniere-ligne {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   padding-bottom: 100px;
 }
 

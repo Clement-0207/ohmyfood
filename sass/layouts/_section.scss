@@ -330,3 +330,161 @@ figure {
         }
     }
 }
+
+/*menu le délice des papilles*/
+.menus-delice {
+    @include structure-menu;
+
+    & h1 {
+        text-align: center;
+        font-family: 'rubik', Arial, Helvetica, sans-serif;
+        font-size: 2.3em;
+        font-weight: lighter;
+        margin-bottom: 15px;
+    }
+
+    & .contenu {
+        width: 100%;
+        padding: 0;
+
+        & h3 {
+            padding: 100px 0 0 0;
+            font-size: 3.5em;
+        }
+    }
+
+    & .menu.delice {
+        width: 885px;
+        height: auto;
+        margin: auto;
+        padding: 0 25px;
+        font-family: 'segoe', Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        color: $color-menu-text-delice;
+
+
+        & img {
+            padding: 0;
+            margin: auto 0;
+        }
+
+        & .sous-titre-menu {
+            letter-spacing: 0.07em;
+            font-size: 1.4em;
+            margin: auto;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        & p {
+            padding-left: 70px;
+            margin: 0;
+            width: 90%;
+            letter-spacing: 0.05em;
+            line-height: 0.8em;
+
+
+            &.prix {
+                padding-right: 80px;
+                width: 10%;
+                text-align: right;
+                font-size: 1.5em;
+            }
+        }
+
+        & .ligne {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+        }
+
+        & .derniere-ligne {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            padding-bottom: 100px;
+        }
+    }
+}
+
+/*menu la palette du goût*/
+.menus-palette {
+    @include structure-menu;
+
+    & h1 {
+        text-align: center;
+        font-family: 'rubik', Arial, Helvetica, sans-serif;
+        font-size: 2.3em;
+        font-weight: lighter;
+        margin-bottom: 15px;
+    }
+
+    & .contenu {
+        width: 100%;
+        padding: 0;
+
+        & h3 {
+            padding: 100px 0 0 0;
+            font-size: 3.5em;
+        }
+    }
+
+    & .menu.palette {
+        width: 900px;
+        height: auto;
+        margin: auto;
+        padding: 0 25px;
+        font-family: 'segoe', Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        color: $color-menu-text-delice;
+
+
+        & img {
+            padding: 0;
+            margin: auto 0;
+        }
+
+        & .sous-titre-menu {
+            letter-spacing: 0.07em;
+            font-size: 1.4em;
+            margin: auto;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        & p {
+            padding-left: 60px;
+            margin: 0;
+            width: 90%;
+            height: 20px;
+            letter-spacing: 0.05em;
+            line-height: 0.7em;
+            font-size: 1.01em;
+
+
+            &.prix {
+                padding-right: 80px;
+                width: 10%;
+                text-align: right;
+                font-size: 1.5em;
+            }
+        }
+
+        & .ligne {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+        }
+
+        & .derniere-ligne {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            padding-bottom: 100px;
+        }
+    }
+}
