@@ -129,6 +129,7 @@ footer {
   bottom: 0;
 }
 footer .btn {
+  background-color: transparent;
   height: 60px;
   margin: 0;
   padding-top: 30px;
@@ -177,20 +178,62 @@ header h1 {
 .menu.note {
   background-color: #fcdfdb;
 }
+.menu.note h4 {
+  text-decoration: none;
+  background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 10%) no-repeat left bottom/0 100%;
+  transition: background-size 0.8s;
+  cursor: pointer;
+}
+.menu.note h4:hover {
+  background-size: 100% 80%;
+}
 .menu.chic {
   background-color: #fcf5fe;
+}
+.menu.chic h4 {
+  text-decoration: none;
+  background: linear-gradient(to top, #f78e1f 0%, #8e56fc 10%, transparent 10%) no-repeat left bottom/0 100%;
+  transition: background-size 0.8s;
+  cursor: pointer;
+}
+.menu.chic h4:hover {
+  background-size: 100% 80%;
 }
 .menu.delice {
   background-color: #f9f9f9;
 }
+.menu.delice h4 {
+  text-decoration: none;
+  background: linear-gradient(to top, #2335f3 0%, #89c8ff 10%, transparent 10%) no-repeat left bottom/0 100%;
+  transition: background-size 0.8s;
+  cursor: pointer;
+}
+.menu.delice h4:hover {
+  background-size: 100% 80%;
+}
 .menu.palette {
   background-color: #fdfffd;
+}
+.menu.palette h4 {
+  text-decoration: none;
+  background: linear-gradient(to top, #0b9104 0%, #e7f7d7 10%, transparent 10%) no-repeat left bottom/0 100%;
+  transition: background-size 0.8s;
+  cursor: pointer;
+}
+.menu.palette h4:hover {
+  background-size: 100% 80%;
 }
 
 .menu .contenu {
   text-align: center;
   font-size: 1.2em;
   padding: 100px 0 100px 0;
+  transform: scale(1);
+  transition: transform 800ms;
+}
+.menu .contenu:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
 }
 
 .menu .titre {
@@ -276,10 +319,11 @@ figure {
   height: 2200px;
   padding: 10px 35px 0 35px;
 }
-.menu.mentions .contenu {
+.menu.mentions .contenuml {
   padding: 0;
   font-style: italic;
   text-align: justify;
+  font-size: 1.2em;
 }
 
 .menus h3 {
@@ -598,16 +642,50 @@ figure {
 aside {
   display: flex;
 }
+aside .p.point1 {
+  transition: transform ease-in-out;
+  animation: mouv 1000ms alternate-reverse infinite;
+}
+@keyframes mouv {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-2px) scale(1.1);
+  }
+  50% {
+    transform: translateY(-3px) rotate(5deg);
+    visibility: hidden;
+  }
+  75% {
+    transform: translateY(-2px) scale(1.1);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
+aside .p.point2 {
+  transition: transform ease-in-out;
+  animation: mouv 1000ms alternate infinite;
+  animation-delay: 3ms;
+}
+aside .p.point3 {
+  transition: transform ease-in-out;
+  animation: mouv 1000ms alternate-reverse infinite;
+  animation-delay: 6ms;
+}
 
 .btn.btn-prochainement {
   font-family: "RalewayM", Arial, Helvetica, sans-serif;
   background-color: #569c87;
   color: #fdcb47;
   letter-spacing: 0.06em;
-  width: 430px;
-  height: 70px;
+  width: 300px;
+  height: 58px;
   border-radius: 8px;
   margin: 0 auto 40px auto;
+  padding: 15px 20px 0 20px;
   font-size: 2.2em;
   border: 0px solid;
 }
@@ -622,6 +700,56 @@ aside {
   margin: 0 auto 40px auto;
   font-size: 2em;
   border: none;
+}
+.btn.btn-mentions {
+  animation: text-shadow 3s ease-in-out infinite;
+}
+@keyframes text-shadow {
+  0% {
+    transform: translate(0);
+    text-shadow: 0 0 0 #3c1218, 0 0 0 #c77413, 0 0 0 #2335f3, 0 0 0 #0b9104;
+  }
+  20% {
+    transform: translateY(-0.2em);
+    text-shadow: 0 0.125em 0 #3c1218, 0 0.25em 0 #c77413, 0 -0.125em 0 #2335f3, 0 -0.25em 0 #0b9104;
+  }
+  40% {
+    transform: translate(0.3em);
+    text-shadow: 0 -0.0625em 0 #3c1218, 0 -0.125em 0 #c77413, 0 0.0625em 0 #2335f3, 0 0.125em 0 #0b9104;
+  }
+  60% {
+    transform: translateY(-0.25em);
+    text-shadow: 0 0.03125em 0 #3c1218, 0 0.0625em 0 #c77413, 0 -0.03125em 0 #2335f3, 0 -0.0625em 0 #0b9104;
+  }
+  80% {
+    transform: translate(0);
+    text-shadow: 0 0 0 #3c1218, 0 0 0 #c77413, 0 0 0 #2335f3, 0 0 0 #0b9104;
+  }
+}
+.btn.btn-contacts {
+  animation: text-shadow 3s ease-in-out infinite;
+}
+@keyframes text-shadow {
+  0% {
+    transform: translate(0);
+    text-shadow: 0 0 0 #3c1218, 0 0 0 #c77413, 0 0 0 #2335f3, 0 0 0 #0b9104;
+  }
+  20% {
+    transform: translateY(-0.2em);
+    text-shadow: 0 0.125em 0 #3c1218, 0 0.25em 0 #c77413, 0 -0.125em 0 #2335f3, 0 -0.25em 0 #0b9104;
+  }
+  40% {
+    transform: translate(0.3em);
+    text-shadow: 0 -0.0625em 0 #3c1218, 0 -0.125em 0 #c77413, 0 0.0625em 0 #2335f3, 0 0.125em 0 #0b9104;
+  }
+  60% {
+    transform: translateY(-0.25em);
+    text-shadow: 0 0.03125em 0 #3c1218, 0 0.0625em 0 #c77413, 0 -0.03125em 0 #2335f3, 0 -0.0625em 0 #0b9104;
+  }
+  80% {
+    transform: translate(0);
+    text-shadow: 0 0 0 #3c1218, 0 0 0 #c77413, 0 0 0 #2335f3, 0 0 0 #0b9104;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

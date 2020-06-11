@@ -13,3 +13,130 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+
+@mixin zoom {
+    transform: scale(1);
+    transition: transform 800ms;
+
+    &:hover {
+        transform: scale(1.15);
+        opacity: 0.8;
+    }
+}
+
+@mixin soulignement-note {
+
+    & h4 {
+
+        text-decoration: none;
+        background: linear-gradient(to top, $color-menu-note 0%, $color-menu-note 10%, transparent 10%) no-repeat left bottom / 0 100%;
+        transition: background-size .8s;
+
+        &:hover {
+            background-size: 100% 80%;
+        }
+
+        cursor: pointer;
+    }
+}
+
+@mixin soulignement-chic {
+
+    & h4 {
+
+        text-decoration: none;
+        background: linear-gradient(to top, $start-color-gradient-chic 0%, $end-color-gradient-chic 10%, transparent 10%) no-repeat left bottom / 0 100%;
+        transition: background-size .8s;
+
+        &:hover {
+            background-size: 100% 80%;
+        }
+
+        cursor: pointer;
+    }
+}
+
+@mixin soulignement-delice {
+
+    & h4 {
+
+        text-decoration: none;
+        background: linear-gradient(to top, $start-color-gradient-delice 0%, $end-color-gradient-delice 10%, transparent 10%) no-repeat left bottom / 0 100%;
+        transition: background-size .8s;
+
+        &:hover {
+            background-size: 100% 80%;
+        }
+
+        cursor: pointer;
+    }
+}
+
+@mixin soulignement-palette {
+
+    & h4 {
+
+        text-decoration: none;
+        background: linear-gradient(to top, $start-color-gradient-palette 0%, $end-color-gradient-palette 10%, transparent 10%) no-repeat left bottom / 0 100%;
+        transition: background-size .8s;
+
+        &:hover {
+            background-size: 100% 80%;
+        }
+
+        cursor: pointer;
+    }
+}
+
+@mixin wiggle {
+
+    animation: text-shadow 3s ease-in-out infinite;
+
+
+    @keyframes text-shadow {
+        0% {
+            transform: translate(0);
+            text-shadow:
+                0 0 0 $color-menu-note,
+                0 0 0 $color-menu-chic,
+                0 0 0 $start-color-gradient-delice,
+                0 0 0 $start-color-gradient-palette;
+        }
+
+        20% {
+            transform: translateY(-0.2em);
+            text-shadow:
+                0 0.125em 0 $color-menu-note,
+                0 0.25em 0 $color-menu-chic,
+                0 -0.125em 0 $start-color-gradient-delice,
+                0 -0.25em 0 $start-color-gradient-palette;
+        }
+
+        40% {
+            transform: translate(0.3em);
+            text-shadow:
+                0 -0.0625em 0 $color-menu-note,
+                0 -0.125em 0 $color-menu-chic,
+                0 0.0625em 0 $start-color-gradient-delice,
+                0 0.125em 0 $start-color-gradient-palette;
+        }
+
+        60% {
+            transform: translateY(-0.25em);
+            text-shadow:
+                0 0.03125em 0 $color-menu-note,
+                0 0.0625em 0 $color-menu-chic,
+                0 -0.03125em 0 $start-color-gradient-delice,
+                0 -0.0625em 0 $start-color-gradient-palette;
+        }
+
+        80% {
+            transform: translate(0);
+            text-shadow:
+                0 0 0 $color-menu-note,
+                0 0 0 $color-menu-chic,
+                0 0 0 $start-color-gradient-delice,
+                0 0 0 $start-color-gradient-palette;
+        }
+    }
+}
