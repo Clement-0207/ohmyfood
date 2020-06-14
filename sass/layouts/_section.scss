@@ -1,20 +1,19 @@
+/*index*/
 .menus {
-    padding: 20px;
+    padding: 30px 0;
     margin: auto;
     width: 700px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-
-
+    cursor: pointer;
 }
 
 .menu {
     width: 300px;
-    height: 430px;
-    margin: 20px;
+    height: 420px;
+    margin: 25px;
     @include menu-shadow;
-
 
     &.note {
         background-color: $color-note;
@@ -44,12 +43,35 @@
     @include zoom;
 }
 
-
 .menu .titre {
     text-align: center;
     font-size: 2em;
 }
 
+/*mentions*/
+.menus>h3 {
+    font-size: 3em;
+    font-style: italic;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu.mentions {
+    width: 100%;
+    height: auto;
+    padding: 10px 35px 0 35px;
+
+    & .contenuml {
+        padding: 0;
+        font-style: italic;
+        text-align: center;
+        font-size: 1.2em;
+    }
+}
+
+
+
+/*menu note de musique*/
 .menu.note h3 {
     font-family: 'devon', Arial, Helvetica, sans-serif;
     margin-top: 0;
@@ -74,65 +96,6 @@ figure {
     margin-bottom: 0;
 }
 
-.menu.chic h3 {
-    font-family: 'croissant', Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
-    @include gradient-text ($start-color-gradient-chic, $end-color-gradient-chic);
-    padding-top: 30px;
-    margin-bottom: 8px;
-}
-
-.menu.chic h2 {
-    font-family: 'spectral', Arial, Helvetica, sans-serif;
-    margin-top: 0;
-    color: $color-menu-chic;
-}
-
-.menu.delice h3 {
-    font-family: 'dancing', Arial, Helvetica, sans-serif;
-    font-size: 1.4em;
-    @include gradient-text ($start-color-gradient-delice, $end-color-gradient-delice);
-    color: transparent;
-}
-
-.menu.delice h2 {
-    font-family: 'segoe', Arial, Helvetica, sans-serif;
-    margin-top: 0;
-    color: $color-menu-delice;
-}
-
-.menu.palette h3 {
-    font-family: 'kaushan', Arial, Helvetica, sans-serif;
-    font-size: 1.4em;
-    @include gradient-text ($start-color-gradient-palette, $end-color-gradient-palette);
-    margin-bottom: 15px;
-}
-
-.menu.palette h2 {
-    font-family: 'segoe', Arial, Helvetica, sans-serif;
-    margin-top: 0;
-    color: $color-menu-palette;
-}
-
-.menu.mentions {
-    width: 700px;
-    height: 2200px;
-    padding: 10px 35px 0 35px;
-
-    & .contenuml {
-        padding: 0;
-        font-style: italic;
-        text-align: justify;
-        font-size: 1.2em;
-    }
-}
-
-.menus h3 {
-    font-family: 'rubik', Arial, Helvetica, sans-serif;
-    font-size: 2em;
-}
-
-/*menu note de musique*/
 .menus-note {
     @include structure-menu;
 
@@ -180,7 +143,7 @@ figure {
 
 
             &.prix {
-                width: 10%;
+                width: 15%;
                 text-align: right;
                 font-weight: 900;
                 font-size: large;
@@ -231,6 +194,7 @@ figure {
 
 
 /*menu chic à la française*/
+
 .menus-chic {
     @include structure-menu;
 
@@ -245,11 +209,6 @@ figure {
     & .contenu {
         width: 100%;
         padding: 0;
-
-        & h3 {
-            padding: 100px 0 50px 0;
-            font-size: 2em;
-        }
     }
 
     & .menu.chic {
@@ -259,6 +218,11 @@ figure {
         padding: 0 30px;
         font-family: 'roboto', Arial, Helvetica, sans-serif;
         font-weight: lighter;
+
+        & h3 {
+            padding: 100px 0 50px 0;
+            font-size: 2em;
+        }
 
         & img {
             padding: 0;
@@ -339,7 +303,35 @@ figure {
     }
 }
 
+.menu.chic h3 {
+    padding-top: 50px;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    letter-spacing: 0.08em;
+    font-family: 'croissant', Arial, Helvetica, sans-serif;
+    @include gradient-text ($start-color-gradient-chic, $end-color-gradient-chic);
+}
+
+.menu.chic h2 {
+    font-family: 'spectral', Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    color: $color-menu-chic;
+}
+
 /*menu le délice des papilles*/
+.menu.delice h3 {
+    font-family: 'dancing', Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    @include gradient-text ($start-color-gradient-delice, $end-color-gradient-delice);
+    color: transparent;
+}
+
+.menu.delice h2 {
+    font-family: 'segoe', Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    color: $color-menu-delice;
+}
+
 .menus-delice {
     @include structure-menu;
 
@@ -397,7 +389,7 @@ figure {
                 padding-right: 80px;
                 width: 10%;
                 text-align: right;
-                font-size: 1.5em;
+                font-size: 1.2em;
             }
         }
 
@@ -418,6 +410,19 @@ figure {
 }
 
 /*menu la palette du goût*/
+.menu.palette h3 {
+    font-family: 'kaushan', Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    @include gradient-text ($start-color-gradient-palette, $end-color-gradient-palette);
+    margin-bottom: 15px;
+}
+
+.menu.palette h2 {
+    font-family: 'segoe', Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    color: $color-menu-palette;
+}
+
 .menus-palette {
     @include structure-menu;
 
@@ -477,7 +482,7 @@ figure {
                 padding-right: 80px;
                 width: 10%;
                 text-align: right;
-                font-size: 1.5em;
+                font-size: 1.2em;
             }
         }
 

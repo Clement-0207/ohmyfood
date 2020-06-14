@@ -1,58 +1,4 @@
 @charset "UTF-8";
-@media (max-width: 1200px) {
-  section.menus {
-    width: 700px;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 976px) {
-  section.menus {
-    width: 500px;
-  }
-}
-@media (max-width: 500px) {
-  body {
-    margin: 0;
-  }
-
-  h1 {
-    font-size: 1.5em;
-  }
-
-  #corps {
-    margin: 0;
-    padding: 0;
-    width: 500px;
-  }
-
-  section.menus {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn.btn-prochainement {
-    width: 300px;
-    font-size: 1.6em;
-    margin: 20px auto 40px auto;
-  }
-
-  footer {
-    display: flex;
-    flex-flow: column wrap;
-  }
-  footer .btn {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    width: 500px;
-  }
-}
 body {
   margin: 0;
   padding: 0;
@@ -130,9 +76,9 @@ footer {
 }
 footer .btn {
   background-color: transparent;
-  height: 60px;
+  height: 50px;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .btn-mentions {
@@ -160,19 +106,21 @@ header h1 {
   letter-spacing: -0.05em;
 }
 
+/*index*/
 .menus {
-  padding: 20px;
+  padding: 30px 0;
   margin: auto;
   width: 700px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 
 .menu {
   width: 300px;
-  height: 430px;
-  margin: 20px;
+  height: 420px;
+  margin: 25px;
   box-shadow: 0px 0px 10px 0px #bdbdbd;
 }
 .menu.note {
@@ -180,7 +128,7 @@ header h1 {
 }
 .menu.note h4 {
   text-decoration: none;
-  background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 10%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 7%) no-repeat left bottom/0 100%;
   transition: background-size 0.8s;
   cursor: pointer;
 }
@@ -191,20 +139,21 @@ header h1 {
   background-color: #fcf5fe;
 }
 .menu.chic h4 {
+  padding-bottom: 8px;
   text-decoration: none;
-  background: linear-gradient(to top, #f78e1f 0%, #8e56fc 10%, transparent 10%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #f78e1f 0%, #8e56fc 10%, transparent 5%) no-repeat left bottom/0% 100%;
   transition: background-size 0.8s;
   cursor: pointer;
 }
 .menu.chic h4:hover {
-  background-size: 100% 80%;
+  background-size: 100% 50%;
 }
 .menu.delice {
   background-color: #f9f9f9;
 }
 .menu.delice h4 {
   text-decoration: none;
-  background: linear-gradient(to top, #2335f3 0%, #89c8ff 10%, transparent 10%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #2335f3 0%, #89c8ff 10%, transparent 5%) no-repeat left bottom/0 70%;
   transition: background-size 0.8s;
   cursor: pointer;
 }
@@ -216,7 +165,7 @@ header h1 {
 }
 .menu.palette h4 {
   text-decoration: none;
-  background: linear-gradient(to top, #0b9104 0%, #e7f7d7 10%, transparent 10%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #0b9104 0%, #e7f7d7 10%, transparent 5%) no-repeat left bottom/0 70%;
   transition: background-size 0.8s;
   cursor: pointer;
 }
@@ -241,6 +190,27 @@ header h1 {
   font-size: 2em;
 }
 
+/*mentions*/
+.menus > h3 {
+  font-size: 3em;
+  font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu.mentions {
+  width: 100%;
+  height: auto;
+  padding: 10px 35px 0 35px;
+}
+.menu.mentions .contenuml {
+  padding: 0;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/*menu note de musique*/
 .menu.note h3 {
   font-family: "devon", Arial, Helvetica, sans-serif;
   margin-top: 0;
@@ -265,73 +235,6 @@ figure {
   margin-bottom: 0;
 }
 
-.menu.chic h3 {
-  font-family: "croissant", Arial, Helvetica, sans-serif;
-  font-size: 1.1em;
-  background: linear-gradient(to bottom right, #f78e1f, #8e56fc);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  color: transparent;
-  padding-top: 30px;
-  margin-bottom: 8px;
-}
-
-.menu.chic h2 {
-  font-family: "spectral", Arial, Helvetica, sans-serif;
-  margin-top: 0;
-  color: #c77413;
-}
-
-.menu.delice h3 {
-  font-family: "dancing", Arial, Helvetica, sans-serif;
-  font-size: 1.4em;
-  background: linear-gradient(to bottom right, #2335f3, #89c8ff);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  color: transparent;
-  color: transparent;
-}
-
-.menu.delice h2 {
-  font-family: "segoe", Arial, Helvetica, sans-serif;
-  margin-top: 0;
-  color: #0a87fb;
-}
-
-.menu.palette h3 {
-  font-family: "kaushan", Arial, Helvetica, sans-serif;
-  font-size: 1.4em;
-  background: linear-gradient(to bottom right, #0b9104, #e7f7d7);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  color: transparent;
-  margin-bottom: 15px;
-}
-
-.menu.palette h2 {
-  font-family: "segoe", Arial, Helvetica, sans-serif;
-  margin-top: 0;
-  color: #72bf56;
-}
-
-.menu.mentions {
-  width: 700px;
-  height: 2200px;
-  padding: 10px 35px 0 35px;
-}
-.menu.mentions .contenuml {
-  padding: 0;
-  font-style: italic;
-  text-align: justify;
-  font-size: 1.2em;
-}
-
-.menus h3 {
-  font-family: "rubik", Arial, Helvetica, sans-serif;
-  font-size: 2em;
-}
-
-/*menu note de musique*/
 .menus-note {
   width: 100%;
   margin-bottom: 70px;
@@ -374,7 +277,7 @@ figure {
   width: 90%;
 }
 .menus-note .menu.note p.prix {
-  width: 10%;
+  width: 15%;
   text-align: right;
   font-weight: 900;
   font-size: large;
@@ -428,10 +331,6 @@ figure {
   width: 100%;
   padding: 0;
 }
-.menus-chic .contenu h3 {
-  padding: 100px 0 50px 0;
-  font-size: 2em;
-}
 .menus-chic .menu.chic {
   width: 800px;
   height: auto;
@@ -439,6 +338,10 @@ figure {
   padding: 0 30px;
   font-family: "roboto", Arial, Helvetica, sans-serif;
   font-weight: lighter;
+}
+.menus-chic .menu.chic h3 {
+  padding: 100px 0 50px 0;
+  font-size: 2em;
 }
 .menus-chic .menu.chic img {
   padding: 0;
@@ -505,7 +408,41 @@ figure {
   padding-bottom: 100px;
 }
 
+.menu.chic h3 {
+  padding-top: 50px;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+  letter-spacing: 0.08em;
+  font-family: "croissant", Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom right, #f78e1f, #8e56fc);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu.chic h2 {
+  font-family: "spectral", Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  color: #c77413;
+}
+
 /*menu le délice des papilles*/
+.menu.delice h3 {
+  font-family: "dancing", Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  background: linear-gradient(to bottom right, #2335f3, #89c8ff);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  color: transparent;
+}
+
+.menu.delice h2 {
+  font-family: "segoe", Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  color: #0a87fb;
+}
+
 .menus-delice {
   width: 100%;
   margin-bottom: 70px;
@@ -557,7 +494,7 @@ figure {
   padding-right: 80px;
   width: 10%;
   text-align: right;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .menus-delice .menu.delice .ligne {
   display: flex;
@@ -572,6 +509,22 @@ figure {
 }
 
 /*menu la palette du goût*/
+.menu.palette h3 {
+  font-family: "kaushan", Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  background: linear-gradient(to bottom right, #0b9104, #e7f7d7);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 15px;
+}
+
+.menu.palette h2 {
+  font-family: "segoe", Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  color: #72bf56;
+}
+
 .menus-palette {
   width: 100%;
   margin-bottom: 70px;
@@ -625,7 +578,7 @@ figure {
   padding-right: 80px;
   width: 10%;
   text-align: right;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .menus-palette .menu.palette .ligne {
   display: flex;
@@ -641,6 +594,9 @@ figure {
 
 aside {
   display: flex;
+}
+aside .p {
+  padding-top: 3px;
 }
 aside .p.point1 {
   transition: transform ease-in-out;
@@ -698,57 +654,357 @@ aside .p.point3 {
   width: 450px;
   height: 60px;
   margin: 0 auto 40px auto;
-  font-size: 2em;
+  font-size: 1.8em;
   border: none;
 }
-.btn.btn-mentions {
-  animation: text-shadow 3s ease-in-out infinite;
+.btn.btn-mentions:hover {
+  animation: text-shadow 1s ease-in-out infinite;
 }
 @keyframes text-shadow {
   0% {
-    transform: translate(0);
-    text-shadow: 0 0 0 #3c1218, 0 0 0 #c77413, 0 0 0 #2335f3, 0 0 0 #0b9104;
+    transform: translateX(0);
+    text-shadow: 0.05em 0 0 #3c1218, 0.05em 0 0 #c77413, 0.05em 0 0 #2335f3, 0.05em 0 0 #0b9104;
   }
   20% {
     transform: translateY(-0.2em);
-    text-shadow: 0 0.125em 0 #3c1218, 0 0.25em 0 #c77413, 0 -0.125em 0 #2335f3, 0 -0.25em 0 #0b9104;
+    text-shadow: 0 0.125vh 0 #3c1218, 0 0.25em 0 #c77413, 0 -0.125vh 0 #2335f3, 0 -0.25em 0 #0b9104;
   }
   40% {
-    transform: translate(0.3em);
-    text-shadow: 0 -0.0625em 0 #3c1218, 0 -0.125em 0 #c77413, 0 0.0625em 0 #2335f3, 0 0.125em 0 #0b9104;
+    transform: translateY(0.3em);
+    text-shadow: 0 -0.0625em 0 #3c1218, 0 -0.125vh 0 #c77413, 0 0.0625em 0 #2335f3, 0 0.125vh 0 #0b9104;
   }
   60% {
     transform: translateY(-0.25em);
-    text-shadow: 0 0.03125em 0 #3c1218, 0 0.0625em 0 #c77413, 0 -0.03125em 0 #2335f3, 0 -0.0625em 0 #0b9104;
+    text-shadow: 0 0.03125em 0 #3c1218, 0 0.0625vh 0 #c77413, 0 -0.03125em 0 #2335f3, 0 -0.0625vh 0 #0b9104;
   }
   80% {
-    transform: translate(0);
-    text-shadow: 0 0 0 #3c1218, 0 0 0 #c77413, 0 0 0 #2335f3, 0 0 0 #0b9104;
+    transform: translateY(0);
+    text-shadow: 0 0 0.0125em #3c1218, 0 0 0.007em #c77413, -0.0125em 0 0 #2335f3, -0.007em 0 0 #0b9104;
   }
 }
-.btn.btn-contacts {
-  animation: text-shadow 3s ease-in-out infinite;
+.btn.btn-contacts:hover {
+  animation: text-shadow 1s ease-in-out infinite;
 }
 @keyframes text-shadow {
   0% {
-    transform: translate(0);
-    text-shadow: 0 0 0 #3c1218, 0 0 0 #c77413, 0 0 0 #2335f3, 0 0 0 #0b9104;
+    transform: translateX(0);
+    text-shadow: 0.05em 0 0 #3c1218, 0.05em 0 0 #c77413, 0.05em 0 0 #2335f3, 0.05em 0 0 #0b9104;
   }
   20% {
     transform: translateY(-0.2em);
-    text-shadow: 0 0.125em 0 #3c1218, 0 0.25em 0 #c77413, 0 -0.125em 0 #2335f3, 0 -0.25em 0 #0b9104;
+    text-shadow: 0 0.125vh 0 #3c1218, 0 0.25em 0 #c77413, 0 -0.125vh 0 #2335f3, 0 -0.25em 0 #0b9104;
   }
   40% {
-    transform: translate(0.3em);
-    text-shadow: 0 -0.0625em 0 #3c1218, 0 -0.125em 0 #c77413, 0 0.0625em 0 #2335f3, 0 0.125em 0 #0b9104;
+    transform: translateY(0.3em);
+    text-shadow: 0 -0.0625em 0 #3c1218, 0 -0.125vh 0 #c77413, 0 0.0625em 0 #2335f3, 0 0.125vh 0 #0b9104;
   }
   60% {
     transform: translateY(-0.25em);
-    text-shadow: 0 0.03125em 0 #3c1218, 0 0.0625em 0 #c77413, 0 -0.03125em 0 #2335f3, 0 -0.0625em 0 #0b9104;
+    text-shadow: 0 0.03125em 0 #3c1218, 0 0.0625vh 0 #c77413, 0 -0.03125em 0 #2335f3, 0 -0.0625vh 0 #0b9104;
   }
   80% {
-    transform: translate(0);
-    text-shadow: 0 0 0 #3c1218, 0 0 0 #c77413, 0 0 0 #2335f3, 0 0 0 #0b9104;
+    transform: translateY(0);
+    text-shadow: 0 0 0.0125em #3c1218, 0 0 0.007em #c77413, -0.0125em 0 0 #2335f3, -0.007em 0 0 #0b9104;
+  }
+}
+
+@media (max-width: 976px) {
+  /*base de la page*/
+  header {
+    width: auto;
+  }
+
+  .menus {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: auto;
+  }
+
+  footer {
+    width: auto;
+    display: block;
+  }
+  footer .btn {
+    text-align: center;
+    margin: auto;
+    padding: 30px 0 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+  footer .btn .btn-mentions {
+    margin: auto;
+  }
+  footer .btn .btn-contacts {
+    margin: auto;
+  }
+
+  .btn {
+    width: 0;
+  }
+
+  /*mentions légales*/
+  .menus > h3 {
+    font-size: 2em;
+  }
+
+  /*menu note*/
+  .menus-note .menu.note {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 0;
+  }
+  .menus-note .menu.note ul {
+    padding: 0 20px 0 20px;
+  }
+  .menus-note .menu.note ul .prix {
+    padding: 0 10px;
+    font-size: 1em;
+  }
+  .menus-note .menu.note img {
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .menus-note .menu.note h4 {
+    text-align: center;
+  }
+  .menus-note .menu.note .fin {
+    display: block;
+    width: auto;
+    padding: 0;
+  }
+  .menus-note .menu.note .fin .__fin {
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .menus-note .menu.note .fin h3.text {
+    margin: 0;
+    text-align: center;
+  }
+
+  /*menu chic*/
+  .menus-chic .menu.chic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 0;
+  }
+  .menus-chic .menu.chic .entree p {
+    width: 80%;
+    padding: 0 0 0 30px;
+  }
+  .menus-chic .menu.chic .entree p.prix {
+    width: 20%;
+    padding: 0 30px;
+  }
+  .menus-chic .menu.chic .plat p {
+    width: 80%;
+    padding: 0 0 0 30px;
+  }
+  .menus-chic .menu.chic .plat p.prix {
+    width: 20%;
+    padding: 0 30px;
+  }
+  .menus-chic .menu.chic .dessert p {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .menus-chic .menu.chic ul {
+    padding: 0 20px 0 20px;
+  }
+  .menus-chic .menu.chic ul .prix {
+    padding: 0 10px;
+    font-size: 1em;
+  }
+  .menus-chic .menu.chic img {
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .menus-chic .menu.chic h4 {
+    text-align: center;
+  }
+  .menus-chic .menu.chic .fin {
+    display: block;
+    width: auto;
+    padding: 0;
+  }
+  .menus-chic .menu.chic .fin .__fin {
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .menus-chic .menu.chic .fin h3.text {
+    margin: 0;
+    text-align: center;
+  }
+
+  /*menu delice*/
+  .menus-delice .menu.delice {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 0;
+  }
+  .menus-delice .menu.delice .entree p {
+    width: 80%;
+    padding: 0 0 0 30px;
+    line-height: 1.7em;
+  }
+  .menus-delice .menu.delice .entree p.prix {
+    width: 20%;
+    padding: 0 30px;
+  }
+  .menus-delice .menu.delice .plat p {
+    width: 80%;
+    padding: 0 0 0 30px;
+    line-height: 1.7em;
+  }
+  .menus-delice .menu.delice .plat p.prix {
+    width: 20%;
+    padding: 0 30px;
+  }
+  .menus-delice .menu.delice .dessert p {
+    padding: 0;
+    width: 100%;
+    line-height: 1.7em;
+  }
+  .menus-delice .menu.delice .dessert p.prix {
+    width: 20%;
+    padding: 0 30px;
+  }
+  .menus-delice .menu.delice ul {
+    padding: 0 20px 0 20px;
+  }
+  .menus-delice .menu.delice ul .prix {
+    padding: 0 10px;
+    font-size: 1em;
+  }
+  .menus-delice .menu.delice img {
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .menus-delice .menu.delice h4 {
+    text-align: center;
+  }
+  .menus-delice .menu.delice .fin {
+    display: block;
+    width: auto;
+    padding: 0;
+  }
+  .menus-delice .menu.delice .fin .__fin {
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .menus-delice .menu.delice .fin h3.text {
+    margin: 0;
+    text-align: center;
+  }
+
+  /*menu palette*/
+  .menus-palette .menu.palette {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 0;
+  }
+  .menus-palette .menu.palette .entree p {
+    width: 80%;
+    height: 20%;
+    padding: 0 0 0 30px;
+    line-height: 2em;
+  }
+  .menus-palette .menu.palette .entree p.prix {
+    width: 20%;
+    padding: 0 30px;
+  }
+  .menus-palette .menu.palette .plat p {
+    width: 80%;
+    height: 20%;
+    padding: 0 0 0 30px;
+    line-height: 2em;
+  }
+  .menus-palette .menu.palette .plat p.prix {
+    width: 20%;
+    padding: 0 30px;
+  }
+  .menus-palette .menu.palette .dessert p {
+    width: 80%;
+    height: 20%;
+    padding: 0;
+    width: 100%;
+    line-height: 2em;
+  }
+  .menus-palette .menu.palette .dessert p.prix {
+    width: 20%;
+    padding: 0 30px;
+  }
+  .menus-palette .menu.palette ul {
+    padding: 0 20px 0 20px;
+  }
+  .menus-palette .menu.palette ul .prix {
+    padding: 0 10px;
+    font-size: 1em;
+  }
+  .menus-palette .menu.palette img {
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .menus-palette .menu.palette h4 {
+    text-align: center;
+  }
+  .menus-palette .menu.palette .fin {
+    display: block;
+    width: auto;
+    padding: 0;
+  }
+  .menus-palette .menu.palette .fin .__fin {
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .menus-palette .menu.palette .fin h3.text {
+    margin: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 412px) {
+  .menus {
+    width: auto;
+  }
+
+  .menus-note h1 {
+    font-size: 2em;
+  }
+
+  .menus-chic h1 {
+    font-size: 2em;
+  }
+
+  .menus-delice h1 {
+    font-size: 2em;
+  }
+
+  .menus-palette h1 {
+    font-size: 2em;
+  }
+
+  .btn.btn-prochainement {
+    width: 200px;
+    font-size: 1.5em;
+    height: 45px;
+  }
+}
+@media (max-width: 375px) {
+  .menus {
+    width: 320px;
   }
 }
 

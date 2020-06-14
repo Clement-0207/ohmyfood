@@ -1,6 +1,5 @@
 @import "./utils/variables";
 @import "./utils/mixins";
-@import "./utils/responsive";
 @import "./base/base";
 @import "./base/typography";
 @import "./layouts/footer";
@@ -8,3 +7,4 @@
 @import "./layouts/section";
 @import "./layouts/aside";
 @import "./components/buttons";
+@import "./utils/responsive";

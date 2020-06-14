@@ -3,6 +3,8 @@ aside {
 
 
     & .p {
+        padding-top: 3px;
+
         &.point1 {
             transition: transform ease-in-out;
             animation: mouv 1000ms alternate-reverse infinite;
