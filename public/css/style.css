@@ -128,12 +128,12 @@ header h1 {
 }
 .menu.note h4 {
   text-decoration: none;
-  background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 7%) no-repeat left bottom/0 100%;
-  transition: background-size 0.8s;
+  background: linear-gradient(to top, #3c1218 0%, #3c1218 2px, transparent 4px) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
   cursor: pointer;
 }
 .menu.note h4:hover {
-  background-size: 100% 80%;
+  background-size: 100% 50%;
 }
 .menu.chic {
   background-color: #fcf5fe;
@@ -141,8 +141,8 @@ header h1 {
 .menu.chic h4 {
   padding-bottom: 8px;
   text-decoration: none;
-  background: linear-gradient(to top, #f78e1f 0%, #8e56fc 10%, transparent 5%) no-repeat left bottom/0% 100%;
-  transition: background-size 0.8s;
+  background: linear-gradient(to top, #f78e1f 0%, #8e56fc 2px, transparent 4px) no-repeat left bottom/0% 100%;
+  transition: background-size 0.5s;
   cursor: pointer;
 }
 .menu.chic h4:hover {
@@ -153,8 +153,8 @@ header h1 {
 }
 .menu.delice h4 {
   text-decoration: none;
-  background: linear-gradient(to top, #2335f3 0%, #89c8ff 10%, transparent 5%) no-repeat left bottom/0 70%;
-  transition: background-size 0.8s;
+  background: linear-gradient(to top, #2335f3 0%, #89c8ff 2px, transparent 4px) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
   cursor: pointer;
 }
 .menu.delice h4:hover {
@@ -165,8 +165,8 @@ header h1 {
 }
 .menu.palette h4 {
   text-decoration: none;
-  background: linear-gradient(to top, #0b9104 0%, #e7f7d7 10%, transparent 5%) no-repeat left bottom/0 70%;
-  transition: background-size 0.8s;
+  background: linear-gradient(to top, #0b9104 0%, #e7f7d7 2px, transparent 4px) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
   cursor: pointer;
 }
 .menu.palette h4:hover {
