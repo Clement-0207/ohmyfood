@@ -17,22 +17,18 @@
 
     &.note {
         background-color: $color-note;
-        @include soulignement-note;
     }
 
     &.chic {
         background-color: $color-chic;
-        @include soulignement-chic;
     }
 
     &.delice {
         background-color: $color-delice;
-        @include soulignement-delice;
     }
 
     &.palette {
         background-color: $color-palette;
-        @include soulignement-palette;
     }
 }
 
@@ -97,6 +93,7 @@ figure {
 }
 
 .menus-note {
+    @include soulignement ($color-menu-note, $color-menu-note);
     @include structure-menu;
 
     & h1 {
@@ -197,6 +194,11 @@ figure {
 
 .menus-chic {
     @include structure-menu;
+    @include soulignement ($start-color-gradient-chic, $end-color-gradient-chic);
+
+    & h4 {
+        padding-bottom: 8px;
+    }
 
     & h1 {
         text-align: center;
@@ -334,6 +336,7 @@ figure {
 
 .menus-delice {
     @include structure-menu;
+    @include soulignement ($start-color-gradient-delice, $end-color-gradient-delice);
 
     & h1 {
         text-align: center;
@@ -425,6 +428,7 @@ figure {
 
 .menus-palette {
     @include structure-menu;
+    @include soulignement ($start-color-gradient-palette, $end-color-gradient-palette);
 
     & h1 {
         text-align: center;
