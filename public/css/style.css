@@ -12,6 +12,18 @@ a:visited {
   color: #fdcb47;
 }
 
+a:link {
+  color: #fdcb47;
+}
+
+a:hover {
+  color: #fdcb47;
+}
+
+a:active {
+  color: #fdcb47;
+}
+
 h2,
 h3 {
   font-weight: lighter;
@@ -20,6 +32,9 @@ h3 {
 ul {
   list-style-type: none;
   padding: 0;
+}
+ul li {
+  padding-bottom: 30px;
 }
 
 @font-face {
@@ -154,7 +169,7 @@ header h1 {
 }
 
 /*mentions*/
-.menus > h3 {
+.menus > h2 {
   font-size: 3em;
   font-style: italic;
   margin-left: auto;
@@ -166,6 +181,11 @@ header h1 {
   height: auto;
   padding: 10px 35px 0 35px;
 }
+.menu.mentions h3 {
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+}
 .menu.mentions .contenuml {
   padding: 0;
   font-style: italic;
@@ -174,7 +194,7 @@ header h1 {
 }
 
 /*menu note de musique*/
-.menu.note h3 {
+.menu.note h2 {
   font-family: "devon", Arial, Helvetica, sans-serif;
   margin-top: 0;
   letter-spacing: 0.02em;
@@ -182,7 +202,7 @@ header h1 {
   color: #3c1218;
 }
 
-.menu.note h2 {
+.menu.note h3 {
   font-family: "baneberry", Arial, Helvetica, sans-serif;
   color: #3c1218;
   font-size: 2em;
@@ -206,12 +226,11 @@ figure {
   text-decoration: none;
   background: linear-gradient(to top, #3c1218 0%, #3c1218 2px, transparent 4px) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
-  cursor: pointer;
 }
 .menus-note h4:hover {
   background-size: 100% 50%;
 }
-.menus-note h1 {
+.menus-note h2 {
   text-align: center;
   font-family: "rubik", Arial, Helvetica, sans-serif;
   font-size: 2.3em;
@@ -223,6 +242,8 @@ figure {
   padding: 0;
 }
 .menus-note .contenu h3 {
+  letter-spacing: 0.02em;
+  font-family: "devon", Arial, Helvetica, sans-serif;
   font-size: 2.5em;
 }
 .menus-note .menu.note {
@@ -245,6 +266,7 @@ figure {
   justify-content: space-between;
 }
 .menus-note .menu.note p {
+  line-height: 1.7em;
   margin: 0;
   width: 90%;
 }
@@ -272,7 +294,7 @@ figure {
 .fin {
   width: 500px;
   margin: 0 auto 0 auto;
-  padding: 50px 0 0 130px;
+  padding: 50px 0 50px 130px;
   display: flex;
   justify-content: center;
   font-size: 1.5em;
@@ -282,6 +304,7 @@ figure {
   height: 60px;
 }
 .fin h3.text {
+  font-family: "devon", Arial, Helvetica, sans-serif;
   font-size: 2em;
   padding: 20px 0;
   margin: auto auto auto 10px;
@@ -296,15 +319,17 @@ figure {
   text-decoration: none;
   background: linear-gradient(to top, #f78e1f 0%, #8e56fc 2px, transparent 4px) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
-  cursor: pointer;
 }
 .menus-chic h4:hover {
   background-size: 100% 50%;
 }
-.menus-chic h4 {
-  padding-bottom: 8px;
+.menus-chic p {
+  line-height: 1em;
 }
-.menus-chic h1 {
+.menus-chic h4 {
+  padding-bottom: 4px;
+}
+.menus-chic h2 {
   text-align: center;
   font-family: "rubik", Arial, Helvetica, sans-serif;
   font-size: 2.3em;
@@ -323,9 +348,19 @@ figure {
   font-family: "roboto", Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
+.menus-chic .menu.chic h2 {
+  padding: 100px 0 50px 0;
+  font-size: 2em;
+}
 .menus-chic .menu.chic h3 {
   padding: 100px 0 50px 0;
   font-size: 2em;
+  letter-spacing: 0.08em;
+  font-family: "croissant", Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom right, #f78e1f, #8e56fc);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .menus-chic .menu.chic img {
   padding: 0;
@@ -392,7 +427,7 @@ figure {
   padding-bottom: 100px;
 }
 
-.menu.chic h3 {
+.menu.chic h2 {
   padding-top: 50px;
   margin-bottom: 8px;
   font-size: 0.9em;
@@ -404,14 +439,14 @@ figure {
   color: transparent;
 }
 
-.menu.chic h2 {
+.menu.chic h3 {
   font-family: "spectral", Arial, Helvetica, sans-serif;
   margin-top: 0;
   color: #c77413;
 }
 
 /*menu le délice des papilles*/
-.menu.delice h3 {
+.menu.delice h2 {
   font-family: "dancing", Arial, Helvetica, sans-serif;
   font-size: 1.4em;
   background: linear-gradient(to bottom right, #2335f3, #89c8ff);
@@ -421,7 +456,7 @@ figure {
   color: transparent;
 }
 
-.menu.delice h2 {
+.menu.delice h3 {
   font-family: "segoe", Arial, Helvetica, sans-serif;
   margin-top: 0;
   color: #0a87fb;
@@ -435,12 +470,11 @@ figure {
   text-decoration: none;
   background: linear-gradient(to top, #2335f3 0%, #89c8ff 2px, transparent 4px) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
-  cursor: pointer;
 }
 .menus-delice h4:hover {
   background-size: 100% 50%;
 }
-.menus-delice h1 {
+.menus-delice h2 {
   text-align: center;
   font-family: "rubik", Arial, Helvetica, sans-serif;
   font-size: 2.3em;
@@ -463,6 +497,15 @@ figure {
   font-family: "segoe", Arial, Helvetica, sans-serif;
   font-weight: lighter;
   color: black;
+}
+.menus-delice .menu.delice h3 {
+  font-family: "dancing", Arial, Helvetica, sans-serif;
+  font-size: 3.5em;
+  background: linear-gradient(to bottom right, #2335f3, #89c8ff);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  color: transparent;
 }
 .menus-delice .menu.delice img {
   padding: 0;
@@ -502,7 +545,7 @@ figure {
 }
 
 /*menu la palette du goût*/
-.menu.palette h3 {
+.menu.palette h2 {
   font-family: "kaushan", Arial, Helvetica, sans-serif;
   font-size: 1.4em;
   background: linear-gradient(to bottom right, #0b9104, #e7f7d7);
@@ -512,7 +555,7 @@ figure {
   margin-bottom: 15px;
 }
 
-.menu.palette h2 {
+.menu.palette h3 {
   font-family: "segoe", Arial, Helvetica, sans-serif;
   margin-top: 0;
   color: #72bf56;
@@ -526,12 +569,11 @@ figure {
   text-decoration: none;
   background: linear-gradient(to top, #0b9104 0%, #e7f7d7 2px, transparent 4px) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
-  cursor: pointer;
 }
 .menus-palette h4:hover {
   background-size: 100% 50%;
 }
-.menus-palette h1 {
+.menus-palette h2 {
   text-align: center;
   font-family: "rubik", Arial, Helvetica, sans-serif;
   font-size: 2.3em;
@@ -555,6 +597,15 @@ figure {
   font-weight: lighter;
   color: black;
 }
+.menus-palette .menu.palette h3 {
+  font-family: "kaushan", Arial, Helvetica, sans-serif;
+  font-size: 3.5em;
+  background: linear-gradient(to bottom right, #0b9104, #e7f7d7);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  color: transparent;
+}
 .menus-palette .menu.palette img {
   padding: 0;
   margin: auto 0;
@@ -571,9 +622,8 @@ figure {
   padding-left: 60px;
   margin: 0;
   width: 90%;
-  height: 20px;
   letter-spacing: 0.05em;
-  line-height: 0.7em;
+  line-height: 1em;
   font-size: 1.01em;
 }
 .menus-palette .menu.palette p.prix {
@@ -749,7 +799,7 @@ aside .p.point3 {
   }
 
   /*mentions légales*/
-  .menus > h3 {
+  .menus > h2 {
     font-size: 2em;
   }
 
@@ -760,6 +810,9 @@ aside .p.point3 {
     margin-right: auto;
     width: 90%;
     padding: 0;
+  }
+  .menus-note .menu.note p {
+    line-height: 1.5em;
   }
   .menus-note .menu.note ul {
     padding: 0 20px 0 20px;
@@ -797,6 +850,9 @@ aside .p.point3 {
     margin-right: auto;
     width: 90%;
     padding: 0;
+  }
+  .menus-chic .menu.chic p {
+    line-height: 1.5em;
   }
   .menus-chic .menu.chic .entree p {
     width: 80%;
@@ -859,7 +915,7 @@ aside .p.point3 {
   .menus-delice .menu.delice .entree p {
     width: 80%;
     padding: 0 0 0 30px;
-    line-height: 1.7em;
+    line-height: 1.5em;
   }
   .menus-delice .menu.delice .entree p.prix {
     width: 20%;
@@ -868,7 +924,7 @@ aside .p.point3 {
   .menus-delice .menu.delice .plat p {
     width: 80%;
     padding: 0 0 0 30px;
-    line-height: 1.7em;
+    line-height: 1.5em;
   }
   .menus-delice .menu.delice .plat p.prix {
     width: 20%;
@@ -877,7 +933,7 @@ aside .p.point3 {
   .menus-delice .menu.delice .dessert p {
     padding: 0;
     width: 100%;
-    line-height: 1.7em;
+    line-height: 1.5em;
   }
   .menus-delice .menu.delice .dessert p.prix {
     width: 20%;
@@ -920,11 +976,13 @@ aside .p.point3 {
     width: 90%;
     padding: 0;
   }
+  .menus-palette .menu.palette p {
+    line-height: 1.3em;
+  }
   .menus-palette .menu.palette .entree p {
     width: 80%;
     height: 20%;
     padding: 0 0 0 30px;
-    line-height: 2em;
   }
   .menus-palette .menu.palette .entree p.prix {
     width: 20%;
@@ -934,7 +992,6 @@ aside .p.point3 {
     width: 80%;
     height: 20%;
     padding: 0 0 0 30px;
-    line-height: 2em;
   }
   .menus-palette .menu.palette .plat p.prix {
     width: 20%;
@@ -945,7 +1002,6 @@ aside .p.point3 {
     height: 20%;
     padding: 0;
     width: 100%;
-    line-height: 2em;
   }
   .menus-palette .menu.palette .dessert p.prix {
     width: 20%;

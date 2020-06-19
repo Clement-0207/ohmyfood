@@ -41,7 +41,7 @@
     }
 
     /*mentions légales*/
-    .menus>h3 {
+    .menus>h2 {
         font-size: 2em;
     }
 
@@ -52,6 +52,10 @@
         margin-right: auto;
         width: 90%;
         padding: 0;
+
+        & p {
+            line-height: 1.5em;
+        }
 
         & ul {
             padding: 0 20px 0 20px;
@@ -96,6 +100,10 @@
         margin-right: auto;
         width: 90%;
         padding: 0;
+
+        & p {
+            line-height: 1.5em;
+        }
 
         & .entree {
             & p {
@@ -179,7 +187,7 @@
             & p {
                 width: 80%;
                 padding: 0 0 0 30px;
-                line-height: 1.7em;
+                line-height: 1.5em;
 
                 &.prix {
                     width: 20%;
@@ -192,7 +200,7 @@
             & p {
                 width: 80%;
                 padding: 0 0 0 30px;
-                line-height: 1.7em;
+                line-height: 1.5em;
 
                 &.prix {
                     width: 20%;
@@ -205,7 +213,7 @@
             & p {
                 padding: 0;
                 width: 100%;
-                line-height: 1.7em;
+                line-height: 1.5em;
 
                 &.prix {
                     width: 20%;
@@ -260,12 +268,16 @@
         width: 90%;
         padding: 0;
 
+        & p {
+            line-height: 1.3em;
+        }
+
         & .entree {
             & p {
                 width: 80%;
                 height: 20%;
                 padding: 0 0 0 30px;
-                line-height: 2em;
+
 
                 &.prix {
                     width: 20%;
@@ -279,7 +291,6 @@
                 width: 80%;
                 height: 20%;
                 padding: 0 0 0 30px;
-                line-height: 2em;
 
                 &.prix {
                     width: 20%;
@@ -294,7 +305,7 @@
                 height: 20%;
                 padding: 0;
                 width: 100%;
-                line-height: 2em;
+
 
                 &.prix {
                     width: 20%;

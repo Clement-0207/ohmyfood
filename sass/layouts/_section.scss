@@ -45,7 +45,7 @@
 }
 
 /*mentions*/
-.menus>h3 {
+.menus>h2 {
     font-size: 3em;
     font-style: italic;
     margin-left: auto;
@@ -56,6 +56,12 @@
     width: 100%;
     height: auto;
     padding: 10px 35px 0 35px;
+
+    & h3 {
+        font-size: 1.5em;
+        font-style: italic;
+        text-align: center;
+    }
 
     & .contenuml {
         padding: 0;
@@ -68,7 +74,7 @@
 
 
 /*menu note de musique*/
-.menu.note h3 {
+.menu.note h2 {
     font-family: 'devon', Arial, Helvetica, sans-serif;
     margin-top: 0;
     letter-spacing: 0.02em;
@@ -76,7 +82,7 @@
     color: $color-menu-note;
 }
 
-.menu.note h2 {
+.menu.note h3 {
     font-family: 'baneberry', Arial, Helvetica, sans-serif;
     color: $color-menu-note;
     font-size: 2em;
@@ -96,7 +102,7 @@ figure {
     @include soulignement ($color-menu-note, $color-menu-note);
     @include structure-menu;
 
-    & h1 {
+    & h2 {
         text-align: center;
         font-family: 'rubik', Arial, Helvetica, sans-serif;
         font-size: 2.3em;
@@ -109,6 +115,8 @@ figure {
         padding: 0;
 
         & h3 {
+            letter-spacing: 0.02em;
+            font-family: 'devon', Arial, Helvetica, sans-serif;
             font-size: 2.5em;
         }
     }
@@ -135,6 +143,7 @@ figure {
         }
 
         & p {
+            line-height: 1.7em;
             margin: 0;
             width: 90%;
 
@@ -169,7 +178,7 @@ figure {
 .fin {
     width: 500px;
     margin: 0 auto 0 auto;
-    padding: 50px 0 0 130px;
+    padding: 50px 0 50px 130px;
     display: flex;
     justify-content: center;
     font-size: 1.5em;
@@ -180,6 +189,7 @@ figure {
     }
 
     & h3.text {
+        font-family: 'devon', Arial, Helvetica, sans-serif;
         font-size: 2em;
         padding: 20px 0;
         margin: auto auto auto 10px;
@@ -196,11 +206,15 @@ figure {
     @include structure-menu;
     @include soulignement ($start-color-gradient-chic, $end-color-gradient-chic);
 
-    & h4 {
-        padding-bottom: 8px;
+    & p {
+        line-height: 1em;
     }
 
-    & h1 {
+    & h4 {
+        padding-bottom: 4px;
+    }
+
+    & h2 {
         text-align: center;
         font-family: 'rubik', Arial, Helvetica, sans-serif;
         font-size: 2.3em;
@@ -221,9 +235,17 @@ figure {
         font-family: 'roboto', Arial, Helvetica, sans-serif;
         font-weight: lighter;
 
+        & h2 {
+            padding: 100px 0 50px 0;
+            font-size: 2em;
+        }
+
         & h3 {
             padding: 100px 0 50px 0;
             font-size: 2em;
+            letter-spacing: 0.08em;
+            font-family: 'croissant', Arial, Helvetica, sans-serif;
+            @include gradient-text ($start-color-gradient-chic, $end-color-gradient-chic);
         }
 
         & img {
@@ -305,7 +327,7 @@ figure {
     }
 }
 
-.menu.chic h3 {
+.menu.chic h2 {
     padding-top: 50px;
     margin-bottom: 8px;
     font-size: 0.9em;
@@ -314,21 +336,21 @@ figure {
     @include gradient-text ($start-color-gradient-chic, $end-color-gradient-chic);
 }
 
-.menu.chic h2 {
+.menu.chic h3 {
     font-family: 'spectral', Arial, Helvetica, sans-serif;
     margin-top: 0;
     color: $color-menu-chic;
 }
 
 /*menu le délice des papilles*/
-.menu.delice h3 {
+.menu.delice h2 {
     font-family: 'dancing', Arial, Helvetica, sans-serif;
     font-size: 1.4em;
     @include gradient-text ($start-color-gradient-delice, $end-color-gradient-delice);
     color: transparent;
 }
 
-.menu.delice h2 {
+.menu.delice h3 {
     font-family: 'segoe', Arial, Helvetica, sans-serif;
     margin-top: 0;
     color: $color-menu-delice;
@@ -338,7 +360,7 @@ figure {
     @include structure-menu;
     @include soulignement ($start-color-gradient-delice, $end-color-gradient-delice);
 
-    & h1 {
+    & h2 {
         text-align: center;
         font-family: 'rubik', Arial, Helvetica, sans-serif;
         font-size: 2.3em;
@@ -364,6 +386,13 @@ figure {
         font-family: 'segoe', Arial, Helvetica, sans-serif;
         font-weight: lighter;
         color: $color-menu-text-delice;
+
+        & h3 {
+            font-family: 'dancing', Arial, Helvetica, sans-serif;
+            font-size: 3.5em;
+            @include gradient-text ($start-color-gradient-delice, $end-color-gradient-delice);
+            color: transparent;
+        }
 
 
         & img {
@@ -413,14 +442,14 @@ figure {
 }
 
 /*menu la palette du goût*/
-.menu.palette h3 {
+.menu.palette h2 {
     font-family: 'kaushan', Arial, Helvetica, sans-serif;
     font-size: 1.4em;
     @include gradient-text ($start-color-gradient-palette, $end-color-gradient-palette);
     margin-bottom: 15px;
 }
 
-.menu.palette h2 {
+.menu.palette h3 {
     font-family: 'segoe', Arial, Helvetica, sans-serif;
     margin-top: 0;
     color: $color-menu-palette;
@@ -430,7 +459,7 @@ figure {
     @include structure-menu;
     @include soulignement ($start-color-gradient-palette, $end-color-gradient-palette);
 
-    & h1 {
+    & h2 {
         text-align: center;
         font-family: 'rubik', Arial, Helvetica, sans-serif;
         font-size: 2.3em;
@@ -457,6 +486,13 @@ figure {
         font-weight: lighter;
         color: $color-menu-text-delice;
 
+        & h3 {
+            font-family: 'kaushan', Arial, Helvetica, sans-serif;
+            font-size: 3.5em;
+            @include gradient-text ($start-color-gradient-palette, $end-color-gradient-palette);
+            color: transparent;
+        }
+
 
         & img {
             padding: 0;
@@ -476,9 +512,8 @@ figure {
             padding-left: 60px;
             margin: 0;
             width: 90%;
-            height: 20px;
             letter-spacing: 0.05em;
-            line-height: 0.7em;
+            line-height: 1em;
             font-size: 1.01em;
 
 
